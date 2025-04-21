@@ -37,11 +37,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      opacity: 0;
+      transition: opacity 1s ease-in;
     }
     iframe {
       margin-top: 100px;
-      width: 75%;
-      height: 820px;
+      width: 50%;
+      height: 900px;
       border: none;
     }
     body.loaded main {
@@ -62,8 +64,6 @@
     <a href="page8.html">Reflection</a>
   </header>
   <main>
-    opacity: 0;
-    transition: opacity 1s ease-in;
     <iframe src="https://osenc1102.netlify.app/Cover Letter Outcomes Reflection.pdf"></iframe>
   </main>
   <script>
