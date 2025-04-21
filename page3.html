@@ -25,6 +25,32 @@
       align-items: center;
     }
 
+    .site-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      margin-left: 10px;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded .site-title {
+      opacity: 1;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded .nav-links a {
+      opacity: 1;
+    }
+
     header a {
       color: white;
       text-decoration: none;
@@ -62,31 +88,6 @@
       padding: 20px;
       border-left: 4px solid #00c3ff;
       color: #eee;
-    }
-    .site-title {
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-      margin-left: 10px;
-      opacity: 0;
-      transition: opacity 1s ease-in;
-    }
-
-    body.loaded .site-title {
-      opacity: 1;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-      opacity: 0;
-      transition: opacity 1s ease-in;
-    }
-
-    body.loaded nav a {
-      opacity: 1;
     }
 
   </style>
