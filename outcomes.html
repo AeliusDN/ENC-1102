@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Outcomes - OS ENC 1102</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111; /* Dark background */
+      color: white;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      text-align: right;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded header a {
+      opacity: 1;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      justify-content: flex-start;
+      padding: 60px 40px;
+    }
+
+    .textbox {
+      width: 500px;
+      background-color: rgba(255, 255, 255, 0.05); /* Subtle contrast */
+      padding: 20px;
+      border-left: 4px solid #00c3ff;
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="page2.html">About</a>
+    <a href="page3.html">Outcomes</a>
+    <a href="page4.html">Pre-Alpha</a>
+    <a href="page5.html">Alpha</a>
+    <a href="page6.html">Beta</a>
+    <a href="page7.html">Release</a>
+    <a href="page8.html">Reflection</a>
+  </header>
+  <main>
+    <div class="textbox">
+      <h2>ENC 1102 Course Outcomes</h2>
+      <p>This is where your outcome-related content goes. You can list course objectives, student learning goals, and reflections tied to specific assignments or standards.</p>
+      <p>Add more paragraphs, bulleted lists, or links as needed. This box will always stay on the left side of the screen and never pass onto the right.</p>
+    </div>
+  </main>
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
