@@ -51,14 +51,17 @@
       opacity: 0;
       transition: opacity 1s ease-in;
     }
-    iframe {
-      margin-top: 320px;
-      width: 50%;
-      height: 900px;
-      border: none;
-    }
     body.loaded main {
       opacity: 1;
+    }
+    .textbox {
+      margin-top: 320px;
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-left: 4px solid #00c3ff;
     }
 
   </style>
@@ -75,7 +78,10 @@
     <a href="page8.html">Reflection</a>
   </header>
   <main>
-    <iframe src="https://osenc1102.netlify.app/Cover Letter Outcomes Reflection.pdf"></iframe>
+    <div class="textbox">
+      <h2>Welcome to OS ENC 1102</h2>
+      <p>This site serves as a digital portfolio for the ENC 1102 course. Use the navigation above to explore course outcomes, project stages, and the final reflection.</p>
+    </div>
   </main>
   <script>
   window.addEventListener('load', () => {
