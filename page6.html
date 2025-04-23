@@ -87,15 +87,20 @@
     }
 
     .animated-gif {
-      max-width: 300%;
+      position: fixed;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      max-width: 200px;
       height: auto;
-      display: block;
-      margin: 20px auto; /* center horizontally */
+      z-index: 1000;
+      pointer-events: none; /* Optional: prevents it from blocking clicks */
     }
 
   </style>
 </head>
 <body>
+  <img src="RPGM Jump.gif" alt="Descriptive text" class="animated-gif">
   <header>
     <div class="site-title">Owen Scruggs' ENC 1102 Eportfolio</div>
     <div class="nav-links">
@@ -111,7 +116,6 @@
   </header>
 
   <main>
-    <img src="RPGM Jump.gif" alt="Descriptive text" class="animated-gif">
     <section>
       <div class="section-header">
         <h2>Primary Interviews</h2>
