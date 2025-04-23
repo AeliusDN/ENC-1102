@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Release - OS ENC 1102</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      margin-left: 10px;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded .site-title {
+      opacity: 1;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded .nav-links a {
+      opacity: 1;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    section {
+      margin-bottom: 60px;
+      width: 80%;
+      max-width: 900px;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .subheader {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #00c3ff;
+    }
+
+    .textbox {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-left: 4px solid #00c3ff;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-title">Owen Scruggs' ENC 1102 Eportfolio</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="page2.html">About</a>
+      <a href="page3.html">Outcomes</a>
+      <a href="page4.html">Pre-Alpha</a>
+      <a href="page5.html">Alpha</a>
+      <a href="page6.html">Beta</a>
+      <a href="page7.html">Release</a>
+      <a href="page8.html">Reflection</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1 -->
+    <section>
+      <div class="header">Final Project Introduction</div>
+      <div class="subheader">Overview of Design Choices</div>
+      <div class="textbox">
+        <p>[Write your explanation of the design philosophy and goals of the final project here.]</p>
+      </div>
+      <iframe src="your-pdf-1.pdf"></iframe>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+      <div class="subheader">Research & Planning</div>
+      <div class="textbox">
+        <p>[Summarize your research and prewriting leading into the final project.]</p>
+      </div>
+      <iframe src="your-pdf-2.pdf"></iframe>
+    </section>
+
+    <!-- Section 3 -->
+    <section>
+      <div class="subheader">Audience & Purpose</div>
+      <div class="textbox">
+        <p>[Describe how you considered audience and rhetorical goals.]</p>
+      </div>
+      <iframe src="your-pdf-3.pdf"></iframe>
+    </section>
+
+    <!-- Section 4 -->
+    <section>
+      <div class="header">Final Artifact & Delivery</div>
+      <div class="subheader">Project Showcase</div>
+      <div class="textbox">
+        <p>[Explain the final delivery and its strengths/impact.]</p>
+      </div>
+      <iframe src="your-pdf-4.pdf"></iframe>
+    </section>
+
+    <!-- Section 5 -->
+    <section>
+      <div class="subheader">Revision Process</div>
+      <div class="textbox">
+        <p>[Discuss revisions made and how they improved the project.]</p>
+      </div>
+      <iframe src="your-pdf-5.pdf"></iframe>
+    </section>
+
+    <!-- Section 6 -->
+    <section>
+      <div class="subheader">Final Thoughts</div>
+      <div class="textbox">
+        <p>[Close out the page with any reflections on the project as a whole.]</p>
+      </div>
+      <iframe src="your-pdf-6.pdf"></iframe>
+    </section>
+  </main>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
