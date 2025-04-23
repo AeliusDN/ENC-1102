@@ -85,9 +85,31 @@
       height: 900px;
       border: none;
     }
+    .gif-left {
+      position: fixed;
+      top: 30%; /* Adjust vertical position */
+      left: 20px;
+      width: 750px;
+      height: auto;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    .gif-right {
+      position: fixed;
+      top: 65%; /* Adjust differently from left GIF */
+      right: 20px;
+      width: 750px;
+      height: auto;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
   </style>
 </head>
 <body>
+  <img src="RPGM Study.gif" alt="Left Animation" class="gif-left">
+  <img src="RPGM Eureka.gif" alt="Right Animation" class="gif-right">
   <header>
     <div class="site-title">Owen Scruggs' ENC 1102 Eportfolio</div>
     <div class="nav-links">
