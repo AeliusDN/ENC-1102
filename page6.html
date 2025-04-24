@@ -86,21 +86,39 @@
       border: none;
     }
 
-    .animated-gif {
+    .animated-gif-right {
       position: fixed;
-      top: 50%;
+      top: 25%; /* different vertical height than the left one */
       right: 30px;
-      transform: translateY(-50%);
-      width: 750px;
+      max-width: 650px;
+      width: 100%;
       height: auto;
       z-index: 1000;
-      pointer-events: none; /* Optional: prevents it from blocking clicks */
+      pointer-events: none;
+    }
+
+    @media (max-width: 1200px) {
+      .animated-gif-right {
+        max-width: 400px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .animated-gif-right {
+        max-width: 250px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .animated-gif-right {
+        display: none;
+      }
     }
 
   </style>
 </head>
 <body>
-  <img src="RPGM Jump.gif" alt="Descriptive text" class="animated-gif">
+  <img src="RPGM Jump.gif" alt="Descriptive text" class="animated-gif-right">
   <header>
     <div class="site-title">Owen Scruggs' ENC 1102 Eportfolio</div>
     <div class="nav-links">
