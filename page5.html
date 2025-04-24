@@ -85,31 +85,73 @@
       height: 900px;
       border: none;
     }
-    .gif-left {
+    .animated-gif-left {
       position: fixed;
-      top: 20%; /* Adjust vertical position */
-      left: 20px;
-      width: 750px;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      max-width: 750px;   /* This becomes the limit for large screens */
+      width: 100%;
       height: auto;
       z-index: 1000;
       pointer-events: none;
     }
 
-    .gif-right {
+    /* Shrink for medium screens */
+    @media (max-width: 1200px) {
+      .animated-gif-left {
+        max-width: 500px;
+      }
+    }
+
+    /* Shrink more for smaller screens */
+    @media (max-width: 900px) {
+      .animated-gif-left {
+        max-width: 300px;
+      }
+    }
+
+    /* Hide for very narrow screens */
+    @media (max-width: 600px) {
+      .animated-gif-left {
+        display: none;
+      }
+    }
+
+    .animated-gif-right {
       position: fixed;
-      top: 50%; /* Adjust differently from left GIF */
-      right: 20px;
-      width: 750px;
+      top: 25%; /* different vertical height than the left one */
+      right: 30px;
+      max-width: 650px;
+      width: 100%;
       height: auto;
       z-index: 1000;
       pointer-events: none;
+    }
+
+    @media (max-width: 1200px) {
+      .animated-gif-right {
+        max-width: 400px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .animated-gif-right {
+        max-width: 250px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .animated-gif-right {
+        display: none;
+      }
     }
 
   </style>
 </head>
 <body>
-  <img src="RPGM Study.gif" alt="Left Animation" class="gif-left">
-  <img src="RPGM Eureka.gif" alt="Right Animation" class="gif-right">
+  <img src="RPGM Study.gif" alt="Left Animation" class="animated-gif-left">
+  <img src="RPGM Eureka.gif" alt="Right Animation" class="animated-gif-right">
   <header>
     <div class="site-title">Owen Scruggs' ENC 1102 Eportfolio</div>
     <div class="nav-links">
