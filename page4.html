@@ -91,10 +91,32 @@
       top: 50%;
       left: 30px;
       transform: translateY(-50%);
-      width: 750px;
+      max-width: 750px;   /* This becomes the limit for large screens */
+      width: 100%;
       height: auto;
       z-index: 1000;
-      pointer-events: none; /* prevents blocking clicks */
+      pointer-events: none;
+    }
+
+    /* Shrink for medium screens */
+    @media (max-width: 1200px) {
+      .animated-gif-left {
+        max-width: 500px;
+      }
+    }
+
+    /* Shrink more for smaller screens */
+    @media (max-width: 900px) {
+      .animated-gif-left {
+        max-width: 300px;
+      }
+    }
+
+    /* Hide for very narrow screens */
+    @media (max-width: 600px) {
+      .animated-gif-left {
+        display: none;
+      }
     }
 
   </style>
